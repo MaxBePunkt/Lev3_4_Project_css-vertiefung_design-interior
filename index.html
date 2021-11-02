@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lev3_4_Project_css-vertiefung_design-interior</title>
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://kit.fontawesome.com/51eb081cca.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -30,13 +31,17 @@
             </div>
 
             <div id="browserNav">
-                <ul>
-                    <li><a href="#">H&H</a></li>
-                    <li><a href="#">OUR STORY</a></li>
-                    <li><a href="#">DESIGNS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                <ul id="mobileNav">
+                    <li onclick="navBar()"><i class="fas fa-bars"></i></li>
                 </ul>
+
             </div>
+            <ul id="navLinks">
+                <li><a href="#">H&H</a></li>
+                <li><a href="#">OUR STORY</a></li>
+                <li><a href="#">DESIGNS</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
         </nav>
         <section>
             <article>
@@ -116,6 +121,7 @@
                 <p>CREATED WITH LOVE</p>
             </div>
             <div>
+
                 <ul>
                     <li><a href="#">PRIVACY</a></li>
                     <li><a href="#">TERMS</a></li>
