@@ -70,15 +70,10 @@ header p {
 main section:nth-of-type(1) {
   background-color: #2e2e2e;
 }
-#mobileNav {
-  display: none;
-}
-#mobileNav ul li {
-  display: inline-block;
-}
 
 nav {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   background-color: #2e2e2e;
   align-items: center;
@@ -368,11 +363,19 @@ footer ul li:not(:last-of-type) {
         NAV
   #############################
   */
-
-  #browserNav {
-    display: none;
+  nav div:nth-of-type(1) {
+    width: 100%;
+    text-align: center;
   }
-  #mobileNav {
+  #browserNav {
+    width: 100%;
+  }
+  nav ul {
+    list-style: none;
     display: block;
+    width: 100%;
+  }
+  nav ul li {
+    text-align: center;
   }
 }
