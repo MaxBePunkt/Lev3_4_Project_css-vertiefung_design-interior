@@ -76,9 +76,10 @@ main section:nth-of-type(1) {
   color: #fff;
   font-size: 3rem;
 }
-#navLinks {
+.navActive {
   display: flex;
 }
+
 nav {
   display: flex;
   flex-wrap: wrap;
@@ -373,8 +374,10 @@ footer ul li:not(:last-of-type) {
   */
 
   #navLinks {
-    display: none;
     width: 100%;
+  }
+  .navActive {
+    display: none;
   }
   #mobileNav {
     display: inline-block;
@@ -386,10 +389,5 @@ footer ul li:not(:last-of-type) {
   }
   nav ul li {
     text-align: center;
-  }
-}
-@media screen and (min-width: 600px) {
-  #navLinks {
-    display: flex;
   }
 }
